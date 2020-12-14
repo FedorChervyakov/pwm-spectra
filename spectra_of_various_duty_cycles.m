@@ -45,5 +45,8 @@ for i=1:length(D)
     tit3 = sprintf("Angle of first %d Fourier coefficients", N);
     title(tit3)
 
-    pause(.05)
+    % Save plot to img folder
+    img_name = sprintf("img/PWM_spectra_of_D_%.2f.png", D(i));
+    print(img_name, "-S1200,675")
 end
+
