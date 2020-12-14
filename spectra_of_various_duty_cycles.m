@@ -34,8 +34,8 @@ for i=1:length(D)
     % Magnitude
     subplot(3, 1, 2);
     stem(0:N, abs([c0(i) ck(:,i)']))
-    axis([0 N 0 A]);
-    tit2 = sprintf("Magnitude of first %d Fourier coefficients", N);
+    axis([0 N 0 A/pi]);
+    tit2 = sprintf("Magnitude of first %d Fourier coefficients, c0 = %.2f", N, c0(i));
     title(tit2)
 
     % Angle
